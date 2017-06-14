@@ -1,0 +1,18 @@
+{
+    "dev": {
+        "driver" : "mysql",
+        "user": "root",
+        "password": "MyNewPass",
+        "host": "127.0.0.1",
+        "database": "ryoaki_app"
+    },
+    "prod": {
+        "driver" : "mysql",
+        "user": "root",
+        "password": "MyNewPass",
+        "host": "127.0.0.1",
+        "database": "ryoaki_app"
+    },
+
+    "sql-file" : true
+}

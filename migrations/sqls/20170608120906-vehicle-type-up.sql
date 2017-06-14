@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS `ryoaki_app`.`vehicle_type` (
+  `vehicle_type_id` INT(11) NOT NULL AUTO_INCREMENT,
+  `vehicle_type_name` VARCHAR(255) NOT NULL,
+  `vehicle_type_desc`  VARCHAR(255) NOT NULL,
+  `base_fare_amount_val` FLOAT(11,2) NOT NULL,
+  `fare_per_minute_amount_val` FLOAT(11,2) NOT NULL,
+  `fare_per_distance_amount_val` FLOAT(11,2) NOT NULL,
+  `minimum_fare_amount_val` FLOAT(11,2) NOT NULL,
+  `created_by_user_id` INT(11) NOT NULL,
+  `created_dttm` DATETIME NOT NULL,
+  `modified_by_user_id` INT(11) NOT NULL,
+  `modified_dttm` DATETIME NOT NULL,
+  PRIMARY KEY (`favorite_place_id`),
+  UNIQUE INDEX `favorite_place_id_UNIQUE` (`favorite_place_id` ASC),
+ENGINE = InnoDB;

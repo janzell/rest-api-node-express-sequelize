@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS `ryoaki_app`.`payment` (
+  `payment_id` INT(11) NOT NULL AUTO_INCREMENT,
+  `payment_transaction_code` VARCHAR(100) NULL DEFAULT NULL,
+  `estimated_fare_amount_val` FLOAT(11,2) NULL DEFAULT NULL,
+  `actual_fare_amount_val` FLOAT(11,2) NOT NULL,
+  `tip_amount_val` FLOAT(11,2) NULL DEFAULT NULL,
+  `payment_transaction_dttm` DATETIME NOT NULL,
+  `payment_method_id` INT(2) NOT NULL,
+  `created_by_user_id` INT(11) NOT NULL,
+  `created_dttm` DATETIME NOT NULL,
+  `modified_by_user_id` INT(11) NOT NULL,
+  `modified_dttm` DATETIME NOT NULL,
+  PRIMARY KEY (`payment_id`),
+  UNIQUE INDEX `payment_id_UNIQUE` (`payment_id` ASC),
+ENGINE = InnoDB;
